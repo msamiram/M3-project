@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="/img/Asset 1@3x 1.png" alt="logo">
+      <ul>
+          <li><a class="active" href="#bank">БАНК</a></li>
+          <li><a href="#business">БИЗНЕС</a></li>
+          <li><a href="#investition">ИНВЕСТИЦИИ</a></li>
+          <li><a href="#studies">СТРАХОВАНИЕ</a></li>
+          <li><a href="#mobile">МОБАЙЛ</a></li>
+          <li><a href="#globe">ПУТЕШЕСТВИЯ</a></li>
+          <li><a href="#ent">РАЗВЛЕЧЕНИЯ</a></li>
+      </ul>
+      <button class="nav-button">ВОЙТИ</button>
+  </nav>
+    <div class="container">
+      <h1>Конвертер валют онлайн</h1>
+      <div class="converter">
+        <div class="input-section">
+          <p>У меня есть</p>
+          <div class="currency-select">
+            <button class="active" class="first-btn" data-currency="RUB">RUB</button>
+            <button data-currency="USD">USD</button>
+            <button data-currency="EUR">EUR</button>
+            <button class="last-btn" data-currency="GBP">GBP</button>
+          </div>
+          <div class="last">
+          <input type="number" id="amountFrom" value="5000" />
+          <p id="rateFrom">1 RUB = 0.0135 USD</p>
+          </div>
+        </div>
+        <div class="output-section">
+          <p>Хочу приобрести</p>
+          <div class="currency-select">
+            <button class="first-btn" data-currency="RUB">RUB</button>
+            <button class="active" data-currency="USD">USD</button>
+            <button data-currency="EUR">EUR</button>
+            <button class="last-btn" data-currency="GBP">GBP</button>
+          </div>
+          <div class="last">
+          <input type="text" id="amountTo" readonly />
+          <p id="rateTo">1 USD = 73.8896 RUB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

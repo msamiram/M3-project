@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+}
+
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 10px 30px;
+}
+
+nav img {
+  height: 30px;
+  width: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+}
+
+.nav-button {
+  background-color: white;
+  color: black;
+  font-size: large;
+  font-weight: bolder;
+  padding: 10px 15px;
+  border: none;
+  margin-right: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 40px;
+  text-align: start;
+}
+
+p {
+  color: grey;
+  text-align: start;
+}
+
+.converter {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.input-section,
+.output-section {
+  flex: 1;
+  border-radius: 10px;
+}
+
+.currency-select {
+  width: 100%;
+  display: flex;
+  gap: 0;
+  margin-bottom: 15px;
+ 
+}
+
+.currency-select button {
+  padding: 10px 15px;
+  width: 25%;
+  border: 1px solid rgb(220, 212, 212);
+  background-color: white;
+  color: gray;
+  cursor: pointer;
+}
+
+.currency-select button.active {
+  background: #9c65e9;
+  color: white;
+}
+
+input {
+  width: 90%;
+  height: 80px;
+  font-size: 50px;
+  font-weight: 600;
+  border: none
+}
+
+.last {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.first-btn {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.last-btn {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+}
